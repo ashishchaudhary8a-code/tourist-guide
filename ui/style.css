@@ -1,0 +1,192 @@
+/* =========================
+   GLOBAL STYLES
+   ========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    letter-spacing: 0.3px;
+}
+
+
+
+/* =========================
+   HEADER (APP BAR STYLE)
+   ========================= */
+
+.header {
+    background: linear-gradient(135deg, #1e88e5, #1565c0);
+    color: white;
+    padding: 22px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+
+.container {
+    max-width: 460px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+
+/* =========================
+   HEADINGS & DROPDOWN
+   ========================= */
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+/* =========================
+   FLAGS & ICONS
+   ========================= */
+
+.flag {
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.icon {
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+/* =========================
+   EMERGENCY CARDS
+   ========================= */
+
+.card {
+    background: #ffffff;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    font-size: 17px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+
+
+/* =========================
+   CALL BUTTON
+   ========================= */
+
+.card a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #1e88e5, #1565c0);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.card a:active {
+    transform: scale(0.97);
+}
+
+
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .card {
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   WATERMARK (SAFE METHOD)
+   ========================= */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    /* Full-screen background image */
+    background-image: url("images/watermark.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* Fallback color */
+    background-color: #000;
+}
+
+/* =========================
+   COUNTRY SELECTION (FIXED)
+   ========================= */
+
+select {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 17px;
+
+    /* Visible color difference */
+    background-color: #e3f2fd;        /* light blue */
+    color: #0d47a1;                   /* dark blue text */
+
+    border: 2px solid #1e88e5;
+    border-radius: 12px;
+
+    outline: none;
+    cursor: pointer;
+
+    box-shadow: 0 6px 14px rgba(30,136,229,0.25);
+}
+
+/* Hover effect */
+select:hover {
+    background-color: #bbdefb;
+}
+
+/* When clicked / focused */
+select:focus {
+    background-color: #e3f2fd;
+    border-color: #1565c0;
+    box-shadow: 0 8px 18px rgba(21,101,192,0.35);
+}
